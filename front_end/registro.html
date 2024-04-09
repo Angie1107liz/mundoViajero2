@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+        <link rel="stylesheet" href="/front_end/css/estilos.css">
+
+        <title>GT </title>
+        <link rel="icon" type="image/png" href="/front_end/img/imgLogos/logoNuevo.png">   
+   </head>
+
+    <body>
+
+      <!-- Topbar Start -->
+        <div class="container-fluid px-5 d-none d-lg-block" style="background-color: rgb(4, 4, 94);">
+            <div class="row gx-0">
+                <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                    <div class="d-inline-flex align-items-center" style="height: 45%;">
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-twitter fw-normal"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-instagram fw-normal"></i></a>
+                        <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href=""><i class="fab fa-youtube fw-normal"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center text-lg-end">
+                    <div class="d-inline-flex align-items-center" style="height: 45px;">
+                        <a href="registro.html"><small class="me-3 text-light"><i class="fa fa-user me-2"></i>Registro</small></a>
+                        <a href="inicioSesion.html"><small class="me-3 text-light"><i class="fa fa-sign-in-alt me-2"></i>iniciar sesión</small></a>
+                        <div class="dropdown">
+                            <a href="#" class="dropdown-toggle text-light" data-bs-toggle="dropdown"><small><i class="fa fa-home me-2"></i> Usuario</small></a>
+                            <div class="dropdown-menu rounded">
+                                <a href="#" class="dropdown-item"><i class="fas fa-user-alt me-2"></i> Perfil</a>
+                                <a href="#" class="dropdown-item"><i class="fas fa-bell me-2"></i> Mis Viajes</a>
+                                <a href="#" class="dropdown-item"><i class="fas fa-comment-alt me-2"></i> Familia y Amigos</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Topbar End -->
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                <!-- <h1 class="m-0"><img src="img/logo1.png" class="img-fluid" alt="Image">GT World</h1> -->
+                <img src="img/imgLogos/logoLetrasFrente.png" alt="Logo">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                 <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Inicio</a>
+                        <a href="nosotros.html" class="nav-item nav-link">Nosotros</a>
+                        <a href="informacion.html" class="nav-item nav-link">Paquetes</a>
+                        <a href="ofertas.html" class="nav-item nav-link">Ofertas</a>
+                        <a href="paquetes.html" class="nav-item nav-link">Tu Viaje</a>
+                        <a href="tuViaje.html" class="nav-item nav-link">Informacion</a>
+                  </div>
+               </div>
+            </nav>
+        </div>
+        <!-- Navbar & Hero End -->
+
+        <!-- Header Start -->
+        <div class="container-fluid bg-breadcrumb">
+            <div class="container text-center py-5" style="max-width: 900px;">
+                <h3 class="text-white display-3 mb-4">Registro</h1>
+                <ol class="breadcrumb justify-content-center mb-0 text-white">
+                    <li class="breadcrumb-item "><a href="indext.html">Inicio</a></li>
+                    <li class="breadcrumb-item"><a href="paquetes.html">paquetes</a></li>
+                    <li class="breadcrumb-item active text-white">Registro</li>
+                </ol>    
+            </div>
+        </div>
+        <!-- Header End -->
+        
+        <!-- Header End -->
+
+        <!-- Testimonial Start -->
+        <div class="container-fluid testimonial py-5">
+            <div class="container py-5">
+                    <h5 class="section-title text-center px-3 tituloRegistro">fromulario</h5>
+                <!-- from Star(fromulario inicio) -->
+                <div class="row " style="margin-right: 0px;"> 
+                    <div class="col-md-4">
+                        <label for="tipo_documento" class="form-label">Tipo de Documento*</label>
+                        <select class="form-select" id="tipo_documento" focusout="validarTipo_documento(this);">
+                            <option selected disabled value="">Seleccione una Opción</option>
+                            <option value="RC">Registro Civil</option>
+                            <option value="TI">Tarjeta de Identidad</option>
+                            <option value="CC">Cedula de Ciudadanía</option>
+                            <option value="CE">Cedula de Extranjería</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="numero_documento" class="form-label">Número Documento*</label>
+                        <input type="text" class="form-control" name="numero_documento" id="numero_documento" step="1" onfocusout="validarNumeroDocumento(this);">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="primer_nombre" class="form-label">Primer Nombre*</label>
+                        <input type="text" class="form-control" name="primer_nombre" id="primer_nombre" onfocusout="validarNombreApellido(this);" >
+                    </div>
+                    <div class="col-md-4">
+                        <label for="segundo_nombre" class="form-label">Segundo Nombre</label>
+                        <input type="text" class="form-control" name="segundo_nombre" id="segundo_nombre"  >
+                    </div>
+                    <div class="col-md-4">
+                        <label for="primer_apellido" class="form-label">Primer apellido*</label>
+                        <input type="text" class="form-control" name="primer_apellido" id="primer_apellido" onfocusout="validarNombreApellido(this);">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="segundo_apellido" class="form-label">Segundo apellido</label>
+                        <input type="text" class="form-control" name="segundo_apellido" id="segundo_apellido">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="correo_electronico" class="form-label">Correo electrónico*</label>
+                        <input type="text" class="form-control" name="correo_electronico" id="correo_electronico" >
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="celular" class="form-label">Telefono*</label>
+                        <input type="text" class="form-control" name="celular" id="celular" onfocusout="validarCelular(this);">
+                    </div>
+                
+                    
+                    <div class="col-md-4">
+                        <label for="Genero" class="form-label">Genero*</label>
+                        <input type="text" class="form-control" name="Genero" id="Genero" onfocusout="validarCelular(this);" >
+                    </div>
+                    <!-- <div class="col-md-4">
+                        <label for="Genero" class="form-label">Fecha de nacimiento</label>
+                        <input type="date" class="form-control" name="Genero" id="Genero" onfocusout="validarCelular(this);" >
+                    </div> -->
+                    <div class="col-md-4">
+                        <h6><strong>Todos los campos que contengan (*) son obligatorios</strong> </h6>
+                    </div>  
+                    <div class="col-12" style=" display: flex;justify-content: center;">
+                        <button class="btn btn-primary Registrar" type="button" onclick="RegistrarPaciente();" style="width: 200px;">Registrar</button>
+                    </div>
+                </div>
+                <!-- from End(fromulario final) -->    
+            </div>
+        </div>
+        <!-- Testimonial End -->
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-white">Get In Touch</h4>
+                            <a href=""><i class="fas fa-home me-2"></i> 123 Street, New York, USA</a>
+                            <a href=""><i class="fas fa-envelope me-2"></i> info@example.com</a>
+                            <a href=""><i class="fas fa-phone me-2"></i> +012 345 67890</a>
+                            <a href="" class="mb-3"><i class="fas fa-print me-2"></i> +012 345 67890</a>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-share fa-2x text-white me-2"></i>
+                                <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn-square btn btn-primary rounded-circle mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-white">Company</h4>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> About</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Careers</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Blog</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Press</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Gift Cards</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Magazine</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="mb-4 text-white">Support</h4>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Contact</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Legal Notice</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Privacy Policy</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Terms and Conditions</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Sitemap</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Cookie policy</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item">
+                            <div class="row gy-3 gx-2 mb-4">
+                                <div class="col-xl-6">
+                                    <form>
+                                        <div class="form-floating">
+                                            <select class="form-select bg-dark border" id="select1">
+                                                <option value="1">Arabic</option>
+                                                <option value="2">German</option>
+                                                <option value="3">Greek</option>
+                                                <option value="3">New York</option>
+                                            </select>
+                                            <label for="select1">English</label>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-xl-6">
+                                    <form>
+                                        <div class="form-floating">
+                                            <select class="form-select bg-dark border" id="select1">
+                                                <option value="1">USD</option>
+                                                <option value="2">EUR</option>
+                                                <option value="3">INR</option>
+                                                <option value="3">GBP</option>
+                                            </select>
+                                            <label for="select1">$</label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <h4 class="text-white mb-3">Payments</h4>
+                            <div class="footer-bank-card">
+                                <a href="#" class="text-white me-2"><i class="fab fa-cc-amex fa-2x"></i></a>
+                                <a href="#" class="text-white me-2"><i class="fab fa-cc-visa fa-2x"></i></a>
+                                <a href="#" class="text-white me-2"><i class="fas fa-credit-card fa-2x"></i></a>
+                                <a href="#" class="text-white me-2"><i class="fab fa-cc-mastercard fa-2x"></i></a>
+                                <a href="#" class="text-white me-2"><i class="fab fa-cc-paypal fa-2x"></i></a>
+                                <a href="#" class="text-white"><i class="fab fa-cc-discover fa-2x"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+        
+        <!-- Topbar Start -->
+        <!-- <div class="container-fluid px-5 d-none d-lg-block" style="background-color: rgb(4, 4, 94);">
+          <div class="row gx-0">
+            <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+              <div class="d-inline-flex align-items-center" style="height: 45%;">
+                <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-twitter fw-normal"></i></a>
+                <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
+                <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
+                <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-instagram fw-normal"></i></a>
+                <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href=""><i class="fab fa-youtube fw-normal"></i></a>
+              </div>
+            </div>
+            <div class="col-lg-4 text-center text-lg-end">
+              <div class="d-inline-flex align-items-center" style="height: 45px;">
+                <a href="registro.html"><small class="me-3 text-light"><i class="fa fa-user me-2"></i>Registro</small></a>
+                <a href="inicioSesion.html"><small class="me-3 text-light"><i class="fa fa-sign-in-alt me-2"></i>iniciar sesión</small></a>
+                <div class="dropdown">
+                  <a href="#" class="dropdown-toggle text-light" data-bs-toggle="dropdown"><small><i class="fa fa-home me-2"></i> Usuario</small></a>
+                  <div class="dropdown-menu rounded">
+                    <a href="#" class="dropdown-item"><i class="fas fa-user-alt me-2"></i> Perfil</a>
+                    <a href="#" class="dropdown-item"><i class="fas fa-bell me-2"></i> Mis Viajes</a>
+                    <a href="#" class="dropdown-item"><i class="fas fa-comment-alt me-2"></i> Familia y Amigos</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+       </div> -->
+       <!-- Topbar End -->
+    
+       <!-- Navbar & Hero Start -->
+        <!-- <div class="container-fluid position-relative p-0">
+          <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <img src="img/imgLogos/logoLetrasFrente.png" alt="Logo">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0 ">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="nosotros.html" class="nav-item nav-link">Nosotros</a>
+                        <a href="informacion.html" class="nav-item nav-link">Paquetes</a>
+                        <a href="ofertas.html" class="nav-item nav-link">Ofertas</a>
+                        <a href="paquetes.html" class="nav-item nav-link">Tu Viaje</a>
+                        <a href="tuViaje.html" class="nav-item nav-link">Informacion</a>
+                    </div>
+                </div>
+          </nav>
+        </div>  
+
+        <div class="container-fluid testimonial py-5">
+            <div class="container py-5">
+                <div class="mx-auto text-center mb-5" style="max-width: 900px;">
+                    <h5 class="section-title px-3 tituloRegistro">Registro</h5>
+                    <h1 class="mb-0 tituloRegistro">Persona</h1>
+                </div> -->
+                <!-- from Star(fromulario inicio) -->
+                <!-- <div class="row formularioRegistro" style="margin-right: 0px;"> 
+                    <div class="col-md-4">
+                        <label for="tipo_documento" class="form-label">Tipo de Documento*</label>
+                        <select class="form-select" id="tipo_documento" focusout="validarTipo_documento(this);">
+                            <option selected disabled value="">Seleccione una Opción</option>
+                            <option value="RC">Registro Civil</option>
+                            <option value="TI">Tarjeta de Identidad</option>
+                            <option value="CC">Cedula de Ciudadanía</option>
+                            <option value="CE">Cedula de Extranjería</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="numero_documento" class="form-label">Número Documento*</label>
+                        <input type="text" class="form-control" name="numero_documento" id="numero_documento" step="1" onfocusout="validarNumeroDocumento(this);">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="primer_nombre" class="form-label">Primer Nombre*</label>
+                        <input type="text" class="form-control" name="primer_nombre" id="primer_nombre" onfocusout="validarNombreApellido(this);" >
+                    </div>
+                    <div class="col-md-4">
+                        <label for="segundo_nombre" class="form-label">Segundo Nombre</label>
+                        <input type="text" class="form-control" name="segundo_nombre" id="segundo_nombre"  >
+                    </div>
+                    <div class="col-md-4">
+                        <label for="primer_apellido" class="form-label">Primer apellido*</label>
+                        <input type="text" class="form-control" name="primer_apellido" id="primer_apellido" onfocusout="validarNombreApellido(this);">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="segundo_apellido" class="form-label">Segundo apellido</label>
+                        <input type="text" class="form-control" name="segundo_apellido" id="segundo_apellido">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="correo_electronico" class="form-label">Correo electrónico*</label>
+                        <input type="text" class="form-control" name="correo_electronico" id="correo_electronico" >
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="celular" class="form-label">Telefono*</label>
+                        <input type="text" class="form-control" name="celular" id="celular" onfocusout="validarCelular(this);">
+                    </div>
+                
+                    
+                    <div class="col-md-4">
+                        <label for="Genero" class="form-label">Genero*</label>
+                        <input type="text" class="form-control" name="Genero" id="Genero" onfocusout="validarCelular(this);" >
+                    </div> -->
+                    <!-- <div class="col-md-4">
+                        <label for="Genero" class="form-label">Fecha de nacimiento</label>
+                        <input type="date" class="form-control" name="Genero" id="Genero" onfocusout="validarCelular(this);" >
+                    </div> -->
+                    <!-- <div class="col-md-4">
+                        <h6><strong>Todos los campos que contengan (*) son obligatorios</strong> </h6>
+                    </div>  
+                    <div class="col-12" style=" display: flex;justify-content: center;">
+                        <button class="btn btn-primary Registrar" type="button" onclick="RegistrarPaciente();" style="width: 200px;">Registrar</button>
+                    </div>
+                </div> -->
+                <!-- from End(fromulario final) -->
+            <!-- </div>
+        </div> -->
+        <!-- Testimonial End -->
+   </body>
+</html>
