@@ -1,3 +1,37 @@
+
+/*** Section Title Start ***/
+.section-title {
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  color: var(--bs-primary);
+  font-family: "Homer Simpson UI";
+}
+
+.section-title::before {
+  content: "";
+  width: 50px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  margin-right: -50px;
+  border: 1px solid var(--bs-primary) !important;
+}
+
+.section-title::after {
+  content: "";
+  width: 50px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  margin-left: -50px;
+  border: 1px solid var(--bs-primary) !important;
+}
+
+/***  Section Title Start end  ***/
+
 /*** iniciar sesión Start ***/
 /* * {
   margin: 0;
@@ -146,7 +180,7 @@ h1 {
   margin-top: 4%;
 }
 
-.tituloRegistro {
+.tituloFontzain {
   font-family: serif;
 }
 
@@ -479,7 +513,7 @@ h1 {
 }
 /* texto del carrusel  */
 .text-white {
-  font-family: serif;
+  font-family: "Homer Simpson UI";
 }
 @media (max-width: 768%) {
     .carousel-header .carousel-inner .carousel-item img,
