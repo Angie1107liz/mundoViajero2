@@ -1,6 +1,230 @@
+/*** iniciar sesión Start ***/
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+}*/
+
+
+.bodyInicioSesion {
+  display: flex;
+  align-items: center;
+  background-color: rgba(202, 202, 202, 0.842);
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url(/front_end/img/imgIndex/carrusel1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+} 
+
+
+.inisioSesion{
+  position: relative;
+  max-width: 100%;
+  background-color: transparent !important;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(55px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 3rem;
+}
+
+.inputboxLogoRegistro {
+  display: flex;
+  justify-content: center;
+  max-width: 500px;
+}
+
+
+.inputboxLogo {
+  display: flex;
+  justify-content: center;
+  max-width: 310px;
+}
+
+.inputbox {
+  position: relative;
+  margin: 30px 0;
+  max-width: 300px;
+  border-bottom: 2px solid #ffff;
+}
+
+.inputbox label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  color: #ffff;
+  font-size: 1rem;
+  pointer-events: none;
+  transition: all 0.5s ease-in-out;
+}
+
+input:focus~label,
+input:valid~label {
+  top: -5px;
+}
+
+.inputbox input {
+  width: 100%;
+  height: 25px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  padding: 0 35px 0 5px;
+  color: #ffff;
+}
+
+.inputbox ion-icon {
+  position: absolute;
+  right: 8px;
+  color: #ffff;
+  font-size: 1.2rem;
+  top: 20px;
+}
+
+.forget {
+  justify-content: center;
+  margin: 7% 0;
+  color: #ffff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.forget label {
+  display: flex;
+  align-items: center;
+}
+
+.forget label input {
+  margin-right: 3px;
+}
+
+.forget a {
+  color: #ffff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.forget a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 2rem;
+  /* color: #ffff; */
+  color: #080808;
+  text-align: center;
+}
+
+.buttonInicioSesion {
+  width: 100%;
+  height: 40px;
+  border-radius: 40px;
+  background-color: rgba(255, 255, 255, 1);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.4s ease;
+}
+
+.buttonInicioSesion:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/*.register {
+  font-size: 0.9rem;
+  color: #ffff;
+  text-align: center;
+  margin: 25px 0 10px;
+}
+
+.register p a {
+  text-decoration: none;
+  color: #ffff;
+  font-weight: 600;
+}
+
+.register p a:hover {
+  text-decoration: underline;
+}
+
+.butonDireccion {
+  text-decoration: none;
+  color: black;
+}
+
+
+
+.inputboxRegistro {
+  position: relative;
+  margin: 30px 0;
+  max-width: 200px;
+  border-bottom: 2px solid #ffff;
+}
+
+.inputboxRegistro label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  color: #ffff;
+  font-size: 1rem;
+  pointer-events: none;
+  transition: all 0.5s ease-in-out;
+}
+
+input:focus~label,
+input:valid~label {
+  top: -5px;
+}
+
+.inputboxRegistro input {
+  width: 100%;
+  height: 25px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  padding: 0 35px 0 5px;
+  color: #ffff;
+}
+
+.inputboxRegistro ion-icon {
+  position: absolute;
+  right: 8px;
+  color: #ffff;
+  font-size: 1.2rem;
+  top: 20px;
+}
+
+.row {
+  display: flex;
+}
+
+.col-md-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.centradoBoton{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+} */
+
+/*** iniciar sesión End ***/
 
 /** From Registro start (Formulario)**/
-
 .col-md-4{
   margin-top: 4%;
 }
@@ -366,7 +590,8 @@
 
 /*** Single Page Hero Header Start ***/
 .bg-breadcrumb {
-    background: linear-gradient(rgb(4, 4, 94), rgb(4, 4, 94)), url(../front_end/img/imgIndex/imgSesion.jpg); 
+    background: linear-gradient(rgb(4, 4, 94), rgb(4, 4, 94)); 
+     background-image: url(/front_end/img/imgIndex/portada.jpg); 
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -375,7 +600,7 @@
 }
 
 .bg-breadcrumb .breadcrumb-item a {
-    color: rgba(219, 219, 223, 0.534);
+    color: rgba(182, 182, 187, 0.534);
 }
 /*** Single Page Hero Header End ***/
 
@@ -639,5 +864,5 @@ background-color: #f2f2f2ea ;
 }
 /*** Explore Tour End ***/
 
-/*** Testimonial Start ***/
+
 
